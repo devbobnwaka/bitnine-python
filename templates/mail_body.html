@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babyducts</title>
+    <style>
+        .container{
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+        }
+        h4{
+            font-size: 1.5em;
+            border-bottom: 1px solid grey;
+            padding-bottom: 2px;
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% comment %} <h1>You are almost there, {{ user.email }}!</h1><br> {% endcomment %}
+        <h4 >Verify Your Account</h4><br>
+        <p> Click the <a href="{{ link }}">link</a> to verify your account. </p>
+        {% comment %} <h2>Please click <a href="{{ link }}">here</a> to confirm your account</h2> {% endcomment %}
+        <!-- <h2>The token expires on {{ expiry|time:"TIME_FORMAT" }}</h2> -->
+    </div>
+</body>
+</html>
